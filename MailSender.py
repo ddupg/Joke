@@ -34,8 +34,8 @@ class MailSender(object):
 
 	def send_mail(self, jokelist):
 		msg = MIMEText(self._jokelist_to_string(jokelist), 'plain', 'utf-8')
-		msg['From'] = self._format_addr('小超家的 <%s>' % self.from_addr)
-		msg['To'] = self._format_addr('小超 <%s>' % self.to_addr)
+		msg['From'] = self._format_addr('发件人 <%s>' % self.from_addr)
+		msg['To'] = self._format_addr('收件人 <%s>' % self.to_addr)
 		msg['Subject'] = Header('天天有笑话', 'utf-8').encode()
 
 		server = smtplib.SMTP(self.smtp_server, self.port)
@@ -54,7 +54,3 @@ class MailSender(object):
 			joke += '-' * 50
 			joke += '\n' * 2
 		return joke
-
-
-#	def _string_handle(s):
-#		return s.repla
