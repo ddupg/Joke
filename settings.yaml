@@ -1,0 +1,12 @@
+API:
+  URL: http://apis.baidu.com/showapi_open_bus/showapi_joke/joke_text
+  APIKEY: 9cf9b1141c06d2cde8824d7173e24c65
+
+
+MAIL:
+  FROM_ADDR: xxx # 发件者邮箱
+  PASSWORD: xxx # 发件者邮箱smtp口令
+  TO_ADDR: [xxx, xxx] # 收件者邮箱，格式为列表
+
+  SMTP_SERVER_ADDR: xxx # smtp服务器地址
+  SMTP_SERVER_PORT: 25 # smtp服务器端口号，一般为25
